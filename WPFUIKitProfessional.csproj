@@ -171,6 +171,54 @@
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataFolder\ContextClass.cs" />
+    <Compile Include="Pages\AdminFolder\AddUserWindow.xaml.cs">
+      <DependentUpon>AddUserWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminFolder\EditUserWindow.xaml.cs">
+      <DependentUpon>EditUserWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminFolder\ListUserPage.xaml.cs">
+      <DependentUpon>ListUserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DirectorFolder\AddAttendanceWindow.xaml.cs">
+      <DependentUpon>AddAttendanceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DirectorFolder\AddShiftsWindow.xaml.cs">
+      <DependentUpon>AddShiftsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DirectorFolder\AddStaffWindow.xaml.cs">
+      <DependentUpon>AddStaffWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DirectorFolder\EditAttendanceWindow.xaml.cs">
+      <DependentUpon>EditAttendanceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DirectorFolder\EditRequestWindow.xaml.cs">
+      <DependentUpon>EditRequestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DirectorFolder\EditShiftsWindow.xaml.cs">
+      <DependentUpon>EditShiftsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DirectorFolder\EditStaffWindow.xaml.cs">
+      <DependentUpon>EditStaffWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DirectorFolder\ListAttendancePage.xaml.cs">
+      <DependentUpon>ListAttendancePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DirectorFolder\ListRequestPage.xaml.cs">
+      <DependentUpon>ListRequestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DirectorFolder\ListShiftsPage.xaml.cs">
+      <DependentUpon>ListShiftsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFolder\AuthorizationWindow.xaml.cs">
+      <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFolder\MenuAdminWindow.xaml.cs">
+      <DependentUpon>MenuAdminWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFolder\MenuDirectorWindow.xaml.cs">
+      <DependentUpon>MenuDirectorWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="Assets\Icons\Icons.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -241,11 +289,79 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AdminFolder\AddUserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminFolder\EditUserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminFolder\ListUserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\AddAttendanceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\AddShiftsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\AddStaffWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\EditAttendanceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\EditRequestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\EditShiftsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\EditStaffWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\ListAttendancePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\ListRequestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\ListShiftsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DirectorFolder\listStaffPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ManagerFolder\AddRequestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ManagerFolder\EditAttendanceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ManagerFolder\ListAttendancePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ManagerFolder\ListRequestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ManagerFolder\ListShiftsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -257,13 +373,37 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowFolder\AuthorizationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\MenuAdminWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\MenuDirectorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\DirectorFolder\listStaffPage.xaml.cs">
+      <DependentUpon>listStaffPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ManagerFolder\AddRequestWindow.xaml.cs">
+      <DependentUpon>AddRequestWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ManagerFolder\EditAttendanceWindow.xaml.cs">
       <DependentUpon>EditAttendanceWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ManagerFolder\ListAttendancePage.xaml.cs">
       <DependentUpon>ListAttendancePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ManagerFolder\ListRequestPage.xaml.cs">
+      <DependentUpon>ListRequestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ManagerFolder\ListShiftsPage.xaml.cs">
+      <DependentUpon>ListShiftsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -316,11 +456,11 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Pages\AdminFolder\" />
-    <Folder Include="Pages\DirectorFolder\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Resource Include="Assets\Icons\login.png" />
+    <Resource Include="Assets\Icons\password.png" />
+    <Resource Include="Assets\Icons\cross.png" />
     <Content Include="DataFolder\DBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DBModel.edmx</DependentUpon>

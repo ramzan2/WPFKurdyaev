@@ -27,6 +27,7 @@ namespace WPFUIKitProfessional
         public MainWindow()
         {
             InitializeComponent();
+            frameContent.Navigate(new ListAttendancePage());
         }
 
  
@@ -49,29 +50,35 @@ namespace WPFUIKitProfessional
             WindowState = WindowState.Minimized;
         }
 
-        private void rdHome_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void rdAnalytics_Click(object sender, RoutedEventArgs e)
         {
-            
+            frameContent.Navigate(new ListShiftsPage());
         }
 
         private void rdMessages_Click(object sender, RoutedEventArgs e)
         {
-           
-        }
-
-        private void rdCollections_Click(object sender, RoutedEventArgs e)
-        {
-           
+            frameContent.Navigate(new ListRequestPage());
         }
 
         private void rdUsers_Click(object sender, RoutedEventArgs e)
         {
             frameContent.Navigate(new ListAttendancePage());
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
+        }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MBClass.ExitMB();
+        }
+
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+            new AddRequestWindow().Show();
         }
     }
 }

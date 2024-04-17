@@ -42,6 +42,24 @@
 
     </Style>
 
+
+    <Style x:Key="imgClose" TargetType="Image">
+        <Setter Property="Width" Value="30" />
+        <Setter Property="Height" Value="30" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="Margin" Value="0 13 13 0" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="RenderTransform">
+                    <Setter.Value>
+                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
     <Style x:Key="BtnStyle"
            TargetType="RadioButton">
 
@@ -186,6 +204,23 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
+
+    <Style x:Key="textHint" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Grid.Column" Value="1" />
+        <Setter Property="Panel.ZIndex" Value="1" />
+        <Setter Property="Margin" Value="10 0 0 0" />
+        <Setter Property="Foreground" Value="#ACB0AF" />
+    </Style>
+
+    <Style x:Key="textBox" TargetType="Control">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Grid.Column" Value="1" />
+        <Setter Property="Margin" Value="10 0 0 0" />
+        <Setter Property="Foreground" Value="#878787" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
     </Style>
 
     <Style x:Key="mainbutton" TargetType="Button">
