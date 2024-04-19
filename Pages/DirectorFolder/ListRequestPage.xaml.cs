@@ -25,7 +25,6 @@ namespace WPFUIKitProfessional.Pages.DirectorFolder
         public ListRequestPage()
         {
             InitializeComponent();
-            InitializeComponent();
             membersDataGrid.ItemsSource = DBEntities.GetContext()
                 .LeaveRequests.ToList().OrderBy(u => u.IdLeaveRequests);
         }

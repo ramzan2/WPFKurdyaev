@@ -25,7 +25,6 @@ namespace WPFUIKitProfessional.Pages.DirectorFolder
     {
         public listStaffPage()
         {
-            Staff staff = new Staff();
             InitializeComponent();
             ListStaffLb.ItemsSource = DBEntities.GetContext()
                .Staff.ToList().OrderBy(u => u.IdStaff);
@@ -34,9 +33,9 @@ namespace WPFUIKitProfessional.Pages.DirectorFolder
         private void SearchTb_TextChanged(object sender, TextChangedEventArgs e)
         {
             ListStaffLb.ItemsSource = DBEntities.GetContext()
-                 .LeaveRequests.Where(u => u.Staff.FIOStaff.ToString()
-                 .StartsWith(SearchTb.Text))
-                 .ToList().OrderBy(u => u.Staff.FIOStaff.ToString());
+                 .Staff.Where(u => u.FIOStaff.
+                  StartsWith(SearchTb.Text))
+                 .ToList().OrderBy(u => u.FIOStaff.ToString());
         }
 
         private void EditTE_Click(object sender, RoutedEventArgs e)
